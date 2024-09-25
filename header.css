@@ -1,0 +1,308 @@
+/* .Header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(238, 238, 238);
+  z-index: 100;
+}
+.LeftSection{
+  display: flex;
+  align-items: center;
+
+}
+.MiddleSection{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.Search-bar{
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray; 
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0 , 0, 0, 0.05);
+  width: 0;
+}
+.Search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+.RightSection{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+.hamburger-menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+.youtube-logo{
+  height: 20px;
+}
+.SearchButton{
+  height: 40px;
+  width: 66px; 
+  background-color: rgb(236, 236, 236);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.VoiceSearchButton{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(246, 246, 246);
+}
+.SearchButton,
+.VoiceSearchButton,
+.UploadIconContainer, .YoutubeAppsIconContainer, 
+.NotiIconContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+
+}
+
+.SearchIcon{
+  height: 25px;
+}
+.VoiceSearchIcon{
+  height: 24px;
+
+}
+
+.UploadIcon{
+  height: 24px;
+
+}
+.YoutubeAppsIcon{
+  height: 24px;
+
+}
+.NotificationsIcon{
+  height: 24px;
+}
+.CurrentUserIcon{
+  height: 32px;
+  border-radius: 16px ;
+}
+.NotiCount{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-family: Roboto,Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.SearchButton .Tooltip, .VoiceSearchButton .Tooltip,
+.UploadIconContainer .Tooltip, .YoutubeAppsIconContainer .Tooltip,
+.NotiIconContainer .Tooltip
+{
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.SearchButton:hover .Tooltip, .VoiceSearchButton:hover .Tooltip,
+.UploadIconContainer:hover .Tooltip,
+.YoutubeAppsIconContainer:hover .Tooltip,
+.NotiIconContainer:hover .Tooltip{
+  opacity: 1;
+} */
+.Header {
+  height: 55px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(238, 238, 238);
+  z-index: 100;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.LeftSection {
+  float: left;
+  height: 100%;
+  line-height: 55px;
+}
+
+.MiddleSection {
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  height: 100%;
+  line-height: 55px;
+  vertical-align: middle;
+}
+
+.Search-bar {
+  display: inline-block;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray; 
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: calc(100% - 40px);
+}
+
+.Search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.RightSection {
+  float: right;
+  width: 180px;
+  margin-right: 24px;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.youtube-logo {
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.SearchButton {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(236, 236, 236);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  display: inline-block;
+  margin-left: -1px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.VoiceSearchButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(246, 246, 246);
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.SearchButton, .VoiceSearchButton, .UploadIconContainer, .YoutubeAppsIconContainer, .NotiIconContainer {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.SearchIcon {
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.VoiceSearchIcon, .UploadIcon, .YoutubeAppsIcon, .NotificationsIcon {
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CurrentUserIcon {
+  height: 32px;
+  border-radius: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.NotiCount {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.SearchButton .Tooltip, .VoiceSearchButton .Tooltip, .UploadIconContainer .Tooltip, .YoutubeAppsIconContainer .Tooltip, .NotiIconContainer .Tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.SearchButton:hover .Tooltip, .VoiceSearchButton:hover .Tooltip, .UploadIconContainer:hover .Tooltip, .YoutubeAppsIconContainer:hover .Tooltip, .NotiIconContainer:hover .Tooltip {
+  opacity: 1;
+}
